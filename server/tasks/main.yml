@@ -1,0 +1,15 @@
+---
+# tasks file for server
+- name: Install a list of packs
+  apt: 
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - apache2
+      - mysql-server
+      #- php5-mysql
+      - php5
+      - liapache2-mod-php5
+      - php-myscrypt
+      - python-mysqldb
+      

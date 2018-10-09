@@ -1,0 +1,13 @@
+---
+- hosts: wordpress
+  connection: local
+  become_user: root
+  remote_user: root
+  become: yes
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress
+
+
